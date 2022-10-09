@@ -22,7 +22,7 @@ const contacts =[
 ];
 
   return (
-    <div className='container'>
+    <div classN ame='container'>
       <Header></Header>
       <AddContact></AddContact>
       < ContactList contacts={contacts}></ContactList>
