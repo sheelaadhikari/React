@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import AddContact from './AddContact';
 import './App.css';
 import Header from './Header';
@@ -8,18 +8,7 @@ import ContactList from './ContactList';
 
 
 function App() {
-const contacts =[
-  {
-    id: "1",
-    name: "Dipesh",
-    email: "malvia@gmail.com",
-  },
-  {
-    id: "2",
-    name: "Nikesh",
-    email: "nicks@gmail.com",
-  },
-];
+const[contacts, setContacts]=useState([]);
 
   return (
     <div classN ame='container'>
