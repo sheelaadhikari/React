@@ -10,11 +10,7 @@ import ContactList from './ContactList';
 function App() {
   const [contacts, setContacts] = useState([]);
 
-  const [counter, setCounter] = useState(0);
 
-  const increase = () => {
-    setCounter(counter + 1)
-  }
 
   return (
     <div className='container'>
@@ -23,8 +19,8 @@ function App() {
       <Header></Header>
       <AddContact></AddContact>
       < ContactList contacts={contacts}></ContactList>
-      <h1>{counter}</h1>
-      <button onClick={increase} >increase</button>
+    
+      
     </div>
   );
 }
