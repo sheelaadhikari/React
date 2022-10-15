@@ -9,6 +9,10 @@ import ContactList from './ContactList';
 
 function App() {
   const [contacts, setContacts] = useState([]);
+const addContactHandler=( contacts) =>{
+  console.log(contacts);
+}
+
 
 
 
@@ -17,7 +21,7 @@ function App() {
 
 
       <Header></Header>
-      <AddContact></AddContact>
+      <AddContact addContactHandler={addContactHandler}></AddContact>
       < ContactList contacts={contacts}></ContactList>
     
       
