@@ -41,7 +41,6 @@ function App() {
     if (retriveContacts) setContacts([...retriveContacts]);
   }, []);
 
-  console.log(contacts, 'from outslde')
 
 
   useEffect(() => {
